@@ -1,0 +1,171 @@
+.home {
+    font-family: 'Nunito', sans-serif;
+    color: #1a3851;
+    text-align: center;
+    padding: 3px;
+    background-image: url('/src/assets/derecha.png');
+    z-index: -1;
+}
+
+.header {
+    margin-bottom: 2rem;
+    background-color: #c3d5e7;
+    height: 50px;
+    padding: 0%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: #1a3851;
+    margin: 0;
+}
+
+.aboutSection {
+    padding: 15px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 1rem;
+    z-index: 1; 
+}
+
+.about {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 1rem;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    max-height: 300px; /* Ajusta esta propiedad para reducir la altura */
+}
+
+.carouselItem {
+    flex: 0 0 100%; /* Cada elemento ocupa todo el ancho del carrusel */
+    opacity: 0; /* Las imágenes no activas están ocultas */
+    transition: opacity 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+    position: absolute; /* Superpone todas las imágenes */
+    top: 0;
+    left: 0;
+}
+
+.carouselItem.active {
+    opacity: 1; /* La imagen activa es visible */
+    position: relative; /* Solo la imagen activa ocupa espacio */
+}
+
+.carouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.schedule {
+    background-color: #ffffff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.treatments {
+    background-color: #ffffff;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.home h2 {
+    font-size: 1.5rem;
+    color: #d66466;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #1a3851;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.treatment {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.treatmentImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #1a3851;
+    margin: 0;
+}
+
+.scheduleLink {
+    color: #3c8c91; 
+    font-weight: bold; 
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+.scheduleLink:hover {
+    color: #60a28f; 
+    text-decoration: underline; 
+}
+
+.footer {
+    background-color: #1a3851;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+.footer p {
+    color:#c3d5e7;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socialIcon {
+    color: #d66466;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+    color: #ffffff;
+}

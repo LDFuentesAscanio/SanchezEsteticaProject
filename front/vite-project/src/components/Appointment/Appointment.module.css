@@ -1,0 +1,107 @@
+.container {
+    position: relative; /* Necesario para que la imagen y la tarjeta estén relacionadas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cardImage {
+    position: absolute;/* Posiciona la imagen relativa al contenedor */
+    top: 0px; /* Ajusta para colocar detrás de la tarjeta */
+    left: 0px; /* Ajusta para la alineación */
+    height: 800px; /* Tamaño de la imagen */
+    width: auto;
+    z-index: 0; /* Asegura que esté detrás de la tarjeta */
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    position: relative; /* Mantiene la tarjeta por encima de la imagen */
+    width: 100%;
+    max-width: 500px;
+    background: #C3D5E7;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1; /* Asegura que la tarjeta esté encima de la imagen */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.disabledCard {
+    background-color: #f7d7d7;
+    color: #a0a0a0;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3c8c91;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.line {
+    border: none;
+    height: 2px;
+    background: #3c8c91;
+    margin: 10px 0;
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #1a3851;
+    font-family: 'Nunito', sans-serif;
+}
+
+.buttonContainter {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3c8c91;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: #2f6e72;
+    transform: scale(1.05);
+}
+
+.active {
+    color: #28A745;
+    font-weight: bold;
+}
+
+.cancelled {
+    color: #d9534f;
+    font-weight: bold;
+    text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+.container {
+    padding: 15px;
+    padding-top: 0;
+    background-image: url('/src/assets/izquierda.png');
+    background-repeat: no-repeat;
+    min-height: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.header {
+    color: #1a3851;
+    font-size: 2.5rem;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.noAppointments {
+    color: #1a3851; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+}

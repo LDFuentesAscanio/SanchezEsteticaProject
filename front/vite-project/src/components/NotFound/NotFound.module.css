@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    text-align: center;
+    background-color: #f8f9fa; /* Color de fondo claro */
+    color: #343a40; /* Color del texto */
+    font-family: 'Arial', sans-serif; /* Tipografía limpia */
+}
+
+.errorCode {
+    font-size: 6rem; /* Tamaño grande para el código de error */
+    font-weight: bold;
+    color: #d66466; /* Color destacado */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+.message {
+    font-size: 1.5rem; /* Tamaño intermedio para el mensaje */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    color: #6c757d; /* Color más claro */
+}
+
+.homeLink {
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: #d66466; 
+    text-decoration: none; 
+    padding: 0.5rem 1rem; 
+    border: 2px solid #d66466; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.homeLink:hover {
+    background-color: #d66466; 
+    color: #ffffff; 
+}

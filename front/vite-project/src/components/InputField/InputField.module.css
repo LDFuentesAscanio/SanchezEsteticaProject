@@ -1,0 +1,50 @@
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem; /* Espaciado entre inputs */
+}
+
+.inputGroup label {
+    font-weight: bold;
+    margin-bottom: 0.2rem; /* Espacio entre el label y el input */
+    color: #1a3851;
+    font-size: 1rem;
+}
+
+.inputGroup input {
+    padding: 0.4rem;
+    border: 1px solid #d66466;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #3c7c88;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputGroup input:focus {
+    border-color: #1a3851;
+    box-shadow: 0 0 5px rgba(26, 56, 81, 0.3);
+}
+
+.inputGroup .error {
+    margin-top: 0.3rem; /* Espacio entre el input y el mensaje de error */
+    color: red;
+    font-size: 0.9rem;
+    align-self: center /* Alinea los errores al inicio */
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 0.7;
+}

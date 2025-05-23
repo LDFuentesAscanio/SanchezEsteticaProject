@@ -1,0 +1,101 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url('/src/assets/florform.png'); 
+    background-position: top left;
+    margin-bottom: 0;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video {
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.formContainer {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 0px; 
+    margin-right: 100px;
+    background: linear-gradient(135deg, #e9f1f7, #dfe7f3);
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: #1a3851;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1A3851;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #3C8C91;
+}
+
+.submitButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #D66466;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submitButton:hover {
+    background-color: #3C8C91;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .videoContainer, .formContainer {
+        max-width: 100%;
+        margin-left: 0; 
+    }
+}
